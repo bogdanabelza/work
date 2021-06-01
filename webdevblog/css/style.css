@@ -1,0 +1,289 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4{
+    font-weight: 400;
+}
+
+li{
+    list-style: none;
+    display: flex;
+}
+
+/* Header */
+
+header{
+    background-color: #f6f6f6;
+    padding: 22px 0;
+}
+
+.header-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-container a{
+    padding: 27px 6px;
+    margin-right: 63px;
+}
+
+.header-container a:hover{
+    background-color: #ffea00;
+}
+
+#menu-checkbox{
+    display: none;
+}
+
+ul{
+    display: flex;
+}
+
+.top-slide{
+    background: url(../img/slider_bg.jpg) center no-repeat;
+    padding: 120px 0 250px 0;
+    margin-bottom: 90px;
+}
+
+.top-container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.main-title{
+    font-size: 4.3rem;
+    margin-bottom: 15px;
+}
+
+.main-title span{
+    display: inline;
+	background-color: #ffea00;
+	padding: 0 10px 0 0;
+}
+
+.main-text{
+    font-size: 1.5rem;
+}
+
+.main-text span{
+    display: inline;
+	background-color: #414146;
+    color: #fff;
+	padding: 0 10px 0 0;
+}
+
+.specialize-container{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.specialize h2{
+    font-size: 2rem;
+    color: #414146;
+}
+
+.specialize p{
+    font-size: 1.5rem;
+    color: #414146;
+}
+
+.bottom{
+    margin-bottom: 65px;
+}
+
+.specialize-cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.top-card{
+    margin-bottom: -10px;
+}
+
+.bottom-card{
+    background: #414146;
+    padding: 20px;
+}
+
+.bottom-card p{
+    color: #fff;
+}
+
+.first-p{
+    font-size: 1.2rem;
+}
+
+.portfolio{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio h3{
+    background: #414146;
+    color: #ffea00;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+}
+
+.portfolio p{
+    color: #414146;
+    margin-bottom: 20px;
+}
+
+.toggles button{
+    border: none;
+    color: #414146;
+    cursor: pointer;
+    font-size: inherit;
+    margin: 0 5px 30px 0;
+}
+
+.toggles button::after{
+    content: '/';
+}
+
+.toggles button:last-child:after{
+    content:'';
+}
+
+.posts{
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+.brand-slider{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.brand-slider h3{
+    background: #414146;
+    color: #ffea00;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+}
+
+.brand-slider p{
+    color: #414146;
+    margin-bottom: 30px;
+}
+
+footer{
+    background: #414146;
+    padding: 30px 0;
+    color: #fff;
+}
+
+footer h3{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer p{
+    margin-bottom: 30px;
+}
+
+.footer-container{
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 30% 20%;
+    grid-column-gap: 3%;
+}
+
+.footer-container .about-us a{
+    border-bottom: 2px solid #ffea00;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px;
+    background: #000;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.tweets-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+    .header-container{
+        width: 100%;
+        display: flex;
+    }
+
+    .main-menu{
+        display: none;
+    }
+
+    .main-menu li{
+        width: 100%;
+        display: block;
+        font-size: 0.7rem;
+    }
+
+    .main-menu a{
+        display: block;
+        padding: 8px;
+    }
+
+    .toggle-button{
+        display: block;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+
+    .header-container a{
+        margin-right: -35px;
+    }
+
+    .main-menu{
+        position: relative;
+        top: 35px;
+        right: 80px;
+    }
+}
