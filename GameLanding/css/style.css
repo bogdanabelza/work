@@ -1,0 +1,242 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    /*font-family: 'Bebas Neue', cursive;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    margin: 0;
+}
+
+
+/* Header */
+
+.header-bg {
+    position: relative; 
+    display: block;
+    min-height: 960px;
+    background: url(../img/bg.png) no-repeat;
+    
+}
+
+.bg {
+    position: relative; 
+    max-width: 100%;
+    min-height: 960px;
+    padding: 1.2rem 0;
+    background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%);
+}
+
+.container {
+    width: 100%;
+    max-width: 1316px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 146px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.menu__link {
+    margin-right: 2.7rem;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-right__inner{
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.drop {
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    background: none;
+    color: white;
+    font-size: 0.7rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.7rem;
+}
+
+.vector{
+    margin-bottom: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #000;
+    min-width: 55px;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 2px 4px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content__a{
+    font-size: 12px;
+}
+
+.dropdown-content a:hover {
+    color: #FFB548;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-line {
+    display: block;
+    border-left: 0.87px solid #fff;
+    height: 30px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.icon-xbox{
+    margin-right: 17px;
+}
+
+
+/* Header-page */
+
+.header-page{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.header-page-content__title{
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+}
+
+.header-page-content__subtitle{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+.btn-innner{
+    display: flex;
+    align-items: center;
+}
+
+  /* Btn */
+
+.btn{
+border: none;
+background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+border-radius: 4px; 
+padding: 17px 22px;
+}
+
+.btn-text{
+font-weight: 900;
+font-size: 16px;
+}
+
+.btn-line{
+border-left: 0.87px solid #000;
+height: 23px;
+opacity: 50%;
+margin-left: 12px;
+margin-right: 12px;
+}
+
+.header-scrolldown {
+    position: absolute; bottom: 0;
+    color: #fff;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 60px;
+}
+
+.scrolldown-text{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 10px;
+}
+.header-scrolldown img{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* SocialBattle */
+
+.socialbattle-bg{
+    margin-top: -3px;
+    min-height: 960px;
+    background-size: 100%;
+    background: url(../img/bg2.png) no-repeat;
+}
