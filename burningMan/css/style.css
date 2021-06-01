@@ -1,0 +1,338 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    line-height: 1.6;
+    margin: 0;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Header */
+
+.header{
+    margin-bottom: 113px;
+}   
+
+.header-bg{
+    display: block;
+    max-height: 900px;
+    min-height: 900px;
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-size: 100%;
+    padding: 3.5rem 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1202px;
+    margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.nav__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: block;
+    margin-right: 4.1rem;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-link{
+    font-family: inherit;
+    font-size: 0.8rem;
+    margin-right: 3.2rem;
+}
+
+.header-nav-link:last-child{
+    margin-right: 0;
+}
+
+.header-tel{
+    display: flex;
+}
+
+.tel{
+    font-family: inherit;
+    font-size: 1.1rem;  
+}
+
+/* Offer */
+
+.offer-content{
+    color: #fff;
+}
+
+.title__1{
+    font-size: 1.9rem;
+    margin: 0;
+    margin-top: 216px;
+    letter-spacing: 0.2rem;
+}
+
+.title__2{
+    font-size: 6.2rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+}
+
+/* Btn */
+
+.btn{
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.1rem; 
+    padding: 18px 54px 18px 54px;
+    margin-top: 55px;
+    border: 1px solid #fff;
+}
+
+
+/* About */
+
+.about{
+    margin-bottom: 150px;
+}
+
+.title{
+    font-size: 3.1rem;
+    margin-bottom: 58px;
+}
+
+.content{
+    display: flex;
+}
+
+.content-left{
+    width: 50%;
+}
+
+.content-right{
+    width: 50%;
+    margin-right: 30px;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 19px;
+}
+
+.text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-right__img{
+    margin-top: 113px;
+}
+
+.content-left__img{
+    margin-top: 62px;
+}
+
+
+/* Media */
+
+@media (max-width: 1024px){
+    
+    .title__1{
+        font-size: 2.5rem;
+        letter-spacing: inherit;
+        margin-top: 100px;
+    }
+
+    .title__2{
+        font-size: 4.5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+        margin-top: 30px;
+        padding: 10px 35px 10px 35px;
+    }
+
+    .header{
+        margin-bottom: 30px;
+    }
+
+    .header-bg{
+        min-height: 600px;
+        padding: 10px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .content-left{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .content-right{
+        width: 100%;
+    }
+
+    .content-right__img {
+        margin-top: 10px;
+    }
+
+    .content-left__img {
+        margin-top: 10px;
+    }
+
+    .left__img{
+        width: 49%;
+    }
+
+    .right__img{
+        width: 100%;
+    }
+
+}
+@media (max-width: 768px){
+
+    .header-bg{
+        min-height: 400px;
+        padding: 10px;
+    }
+
+    .title__1{
+        font-size: 1.5rem;
+        letter-spacing: inherit;
+        margin-top: 40px;
+    }
+
+    .title__2{
+        font-size: 3.5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 8px 35px 8px 35px;
+    }
+
+
+
+}
+
+@media (max-width: 565px){
+
+    .logo{
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    .tel{
+        font-size: 0.5rem;
+    }
+
+	.header-nav-link{
+        margin-right: 10px;
+        font-size: 0.7rem;
+    }
+
+
+    .header-bg{
+        min-height: 300px;
+    }
+
+    .title__1{
+        font-size: 1.2rem;
+        letter-spacing: inherit;
+        margin-top: 20px;
+    }
+
+    .title__2{
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .btn{
+        font-size: 0.8rem;
+        margin-top: 15px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .text{
+        font-size: 0.5rem;
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 320px){
+    .tel{
+        display: none;
+    }
+
+    .logo{
+        margin-right: 5px;
+        width: 30%;
+    }
+
+    .header{
+        margin-bottom: 0;
+    }
+
+    .header-bg{
+        min-height: 200px;
+    }
+
+    .title__1{
+        font-size: 0.8rem;
+        letter-spacing: inherit;
+        margin-top: 20px;
+    }
+
+    .title__2{
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .header-nav-link{
+        margin-right: 10px;
+        font-size: 0.4rem;
+    }
+
+}
